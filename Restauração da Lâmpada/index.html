@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible', content='IE-edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Interagindo com a Lâmpada</title>
+    <link rel="shortcut icon" href="/Mouse na Lâmpada/imagens/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <div>
+        <h1>Interagindo com a Lâmpada</h1>
+        <img id='principal' src='../imagens/lampada-apagada.jpg' onmousemove='acender()' onmouseout='apagar()' onclick='quebrar()' alt='Interagindo com a Lâmpada'>
+        
+        <h4>Para interagir com a Lâmpada, passe o mouse e clique na Imagem.</h4>
+        
+    </div>
+
+    <script>
+        function acender() {
+            document.getElementById('principal').src = '../imagens/lampada-acesa.jpg';   
+        }
+        function apagar() {
+             document.getElementById('principal').src = '../imagens/lampada-apagada.jpg';
+        }
+        function quebrar() {
+            document.getElementById('principal').src = '../imagens/lampada-quebrada.jpg';
+        }
+    </script>
+
+</body>
+</head>
+</html>
